@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Condição Ternária</title>
+    </head>
+    <body>
+        <script>
+           //Exercício 1
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        console.log('O usuário mora em ' +endereco.cidade, '/ ' +endereco.uf, 'no bairro ' 
+        +endereco.bairro, 'na "' +endereco.rua+ '"', "com nº " +
+        endereco.numero+ '.');  
+
+    
+        //Exercício 2  
+    var lista = [];
+
+        function encontraPar(x, y) {
+            while (x <= y) {
+                if (( x%2 ==0)) {
+                    lista.push(x);
+                }
+                x++
+            }
+        }
+    
+    encontraPar(0,20);
+    console.log(lista);
+
+
+
+        //Exercício 3
+    var skills = ["Javascript", "ReactJS", "React Native"];
+    
+    function temHabilidade(skills) {
+        if (skills.includes('Javascript')) {
+            console.log('Você sabe Javascript.');
+        } else if (skills.includes('ReactJS')) {
+            console.log('Você sabe ReactJS') 
+        } else if (skills.includes('React Native')) {
+            console.log('Você sabe React Native')
+        } else {
+            console.log("Tu não sabe de nada mano ;-;")
+        }
+    }
+
+    
+funcionario1 = ["React Native"];
+temHabilidade(funcionario1);
+
+       //Exercício 4 
+    function experiencia(anos) {
+        if (anos >= 0 && anos <= 1) {
+            console.log('Nível iniciante!')
+        } else if (anos > 1 && anos <= 3) {
+            console.log('Nível intermediário!')
+        } else if (anos > 3 && anos <= 6) {
+            console.log('Nível avançado!')
+        } else if (anos > 6 && anos < 7) {
+            console.log('Nível extraordinário!')
+        } else if (anos >= 7) {
+            console.log('Nível Jedi Master!')
+        } else {
+            console.log('Número negativo! Por favor, escolha um número de experiência positivo.')
+        }}
+    
+    
+    var anosEstudo = -23;
+    experiencia(anosEstudo);
+
+
+        // Exercício 5
+
+        var usuarios = [
+    {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+    }
+];
+
+    function mostraResultado() {
+        for (let dados of usuarios) {
+            console.log('O ' +dados.nome, 'possui as habilidades: ' +dados.habilidades.join(", "));
+            
+    }}
+
+    mostraResultado();
+        </script>
+    </body>
+</html>
